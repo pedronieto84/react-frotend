@@ -1,19 +1,20 @@
 
 import './App.css';
 import Component1 from './components/Component1'
-// Ejemplo de poner componentes anidados.
+ 
 
+// Pasarle data de un hijo a un padre
 
-const user = {
-  nombre: 'Laura',
-  edad: 25
+const passDataFromChildToParent = (dataFromChild) =>{
+  console.log('data from my child', dataFromChild)
 }
-// Ejemplo de pasar data de un componente padre a un componente hijo.
+
+
 function App() {
 
   return (
     <div>
-      <Component1 usuario={user} edad={user.edad} />
+      <Component1 passDataFromChildToParent={ passDataFromChildToParent } />
     </div>
   );
 }
