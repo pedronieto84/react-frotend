@@ -3,19 +3,16 @@ import './App.css';
 import Component1 from './components/Component1'
  
 
-// Pasarle data de un hijo a un padre
-
-const passDataFromChildToParent = (dataFromChild) =>{
-  console.log('data from my child', dataFromChild)
-}
-
-
 function App() {
 
   return (
     <div>
-      <Component1 passDataFromChildToParent={ passDataFromChildToParent } />
-    </div>
+    <h1>Bookkeeper</h1>
+    <nav>
+      <Link to="/component1">Componente 1</Link> |{" "}
+      <Link to="/component2">Componente 2</Link>
+    </nav>
+  </div>
   );
 }
 
