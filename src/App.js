@@ -1,6 +1,7 @@
 
 import './App.css';
 import Component1 from './components/Component1'
+import { Link } from "react-router-dom";
  
 
 function App() {
