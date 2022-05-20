@@ -1,10 +1,11 @@
 // Definición de un REACT COMPONENT FUNCIONAL
-
-function Component1() {
+import Component2 from './Component2'
+// Para pasarle data de un componente padre a un componente hijo utilizo las props.
+function Component1(  ) {
     // JSX te permite que en el primer DIV no le pongas el texto DIV.
     return (
-        <> 
-            <p> HOla soy el componente 1</p>
+        <> <p>Soy el componente 1 hola</p>
+            <Component2 />
         </>
     )
 }
