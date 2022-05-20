@@ -4,7 +4,7 @@ function Component2() {
     // JSX te permite que en el primer DIV no le pongas el texto DIV.
     return (
         <> 
-            <p> HOla soy el componente 1</p>
+            <p> HOla soy el componente 2</p>
         </>
     )
 }
