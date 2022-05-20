@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Routes,
+  Route } from "react-router-dom";
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Component1 from './components/Component1'
+import Component2 from './components/Component2'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="component1" element={<Component1 />} />
+          <Route path="component2" element={<Component2 />} />
+    </Routes>
   </BrowserRouter>
 );
 
