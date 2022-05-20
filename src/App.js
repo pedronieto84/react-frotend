@@ -1,23 +1,14 @@
 
 import './App.css';
-
-const nombre = ()=>{
-  return 'Luis'
-}
-
-const usuario = {
-  direccion: {
-    calle: 'Avenida LlucMajor'
-  }
-}
+// Control de eeventos clasicos, mouseClick y mouseOver.
+const mouseClick = () => { console.log('mouseClick') }
+const mouseOver = () => { console.log('mouseOver') }
 
 function App() {
   return (
     <div className="App">
-      <h1>2+2</h1>
-      <h1> Matematics { 2+2 }</h1>
-      <h1> Ejemplo de Ternario { (3+2 ) > 4 ? 'es mayor': 'es menor'}</h1>
-      <h1> Ejemplo de un Object {usuario.direccion.calle }</h1>
+  <button onClick={ mouseClick  }>Click</button>
+  <button onMouseOver={ mouseOver }>Hover</button>
     </div>
   );
 }
