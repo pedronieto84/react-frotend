@@ -1,14 +1,14 @@
 
 import './App.css';
-// Control de eeventos clasicos, mouseClick y mouseOver.
-const mouseClick = () => { console.log('mouseClick') }
-const mouseOver = () => { console.log('mouseOver') }
+// Como pasar eventos a funciones en JSX.
+const mouseClick = (param) => { console.log(param) }
+const mouseOver = (param) => { console.log(param) }
 
 function App() {
   return (
     <div className="App">
-  <button onClick={ mouseClick  }>Click</button>
-  <button onMouseOver={ mouseOver }>Hover</button>
+  <button onClick={ ()=>{ mouseClick('click') }  }>Click</button>
+  <button onMouseOver={ ()=>{ mouseOver('over') }  }>Hover</button>
     </div>
   );
 }
