@@ -3,12 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter,  Routes,
+  Route } from "react-router-dom";
+import Component2 from './components/Component2'
+import Component1 from './components/Component1'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <App />
+      <App />
+      <Routes>
+      <Route path="/" element={<Component1 />} />
+      <Route path="component1" element={<Component1 />} />
+      <Route path="component2" element={<Component2 />} />
+    </Routes>
   </BrowserRouter>
 );
 
