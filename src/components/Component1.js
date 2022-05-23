@@ -3,7 +3,7 @@ function Component1( props ) {
     console.log('props', props)
     return (
         <> 
-            <h1>Hola soy el componente 1</h1>
+            <button type="button" class="btn btn-primary">Primary</button>
         </>
     )
 }
